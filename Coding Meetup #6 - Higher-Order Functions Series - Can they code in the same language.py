@@ -1,4 +1,4 @@
-You will be given an array of objects (associative arrays in PHP, tables in COBOL) representing data about developers who have signed up to attend the next coding meetup that you are organising.
+'''You will be given an array of objects (associative arrays in PHP, tables in COBOL) representing data about developers who have signed up to attend the next coding meetup that you are organising.
 
 Your task is to return either:
 
@@ -16,4 +16,10 @@ your function should return true.
 Notes:
 
 The strings representing a given language will always be formatted in the same way (e.g. 'JavaScript' will always be formatted will upper-case 'J' and 'S'
-The input array will always be valid and formatted as in the example above.
+The input array will always be valid and formatted as in the example above.'''
+def is_same_language(lst): 
+    # your code here
+    list=[]
+    for i in lst:
+        list.append(i['language'])
+    return all(x==list[0] for x in list)
