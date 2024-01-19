@@ -1,4 +1,4 @@
-You will be given an array of objects (associative arrays in PHP) representing data about developers who have signed up to attend the next coding meetup that you are organising.
+'''You will be given an array of objects (associative arrays in PHP) representing data about developers who have signed up to attend the next coding meetup that you are organising.
 
 Your task is to return:
 
@@ -15,7 +15,7 @@ your function should return true.
 
 Notes:
 
-The input array will always be valid and formatted as in the example above.
+The input array will always be valid and formatted as in the example above.'''
 
 def is_ruby_coming(lst): 
     # your code here
