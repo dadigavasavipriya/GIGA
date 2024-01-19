@@ -27,14 +27,15 @@ Return an empty array [] if there is no developer with missing details.
 The input array will always be valid and formatted as in the example above.*/}
 
 function askForMissingDetails(list) {
-    return list.filter(function(a){
-
-      for(var key in a){
-        if (a[key] === null){
-          a['question'] = `Hi, could you please provide your ${key}.`;
-          return a;
-        }
-      }
-
-    });
+  // thank you for checking out the Coding Meetup kata :)
+  var ans=[]
+  list.forEach((user)=>{
+    const person=user
+    for(const ele in person){
+    if(person[ele]===null){
+      ans.push({...person,'question':'Hi, could you please provide your '+ele+'.'})
+      break
+    }}
+  })
+  return ans
 }
