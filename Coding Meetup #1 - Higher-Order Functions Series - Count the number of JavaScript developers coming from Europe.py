@@ -1,4 +1,4 @@
-You will be given an array of objects representing data about developers who have signed up to attend the next coding meetup that you are organising.
+'''You will be given an array of objects representing data about developers who have signed up to attend the next coding meetup that you are organising.
 
 Given the following input array:
 
@@ -19,7 +19,7 @@ Write a function that returns the array sorted alphabetically by the programming
 Notes:
 
 The input array will always be valid and formatted as in the example above.
-The array does not include developers coding in the same language and sharing the same name.
+The array does not include developers coding in the same language and sharing the same name.'''
 
 def count_developers(lst):
     # Your code here
